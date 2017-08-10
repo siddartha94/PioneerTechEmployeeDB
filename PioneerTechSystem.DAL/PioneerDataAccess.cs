@@ -10,7 +10,7 @@ namespace PioneerTechSystem.DAL
 {
     public class EmployeeDataAccessLayer
     {
-        public int SaveEmployee(string FirstName, string LastName, string EmailId, long MobileNo,, string CurrentCountry, string HomeCountry, string Address, int ZipCode)
+        public int SaveEmployee(string FirstName, string LastName, string EmailId, long MobileNo, string CurrentCountry, string HomeCountry, string Address, int ZipCode)
         {
             try { 
             string connectionstring = "Data Source = LAPTOP-TBFNHHOI; Initial Catalog = PioneerEmployeeDB;Integrated Security=True";

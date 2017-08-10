@@ -18,6 +18,7 @@ namespace PioneerTechConsultancySystem
 
         public Form1()
         {
+
             InitializeComponent();
             GetEmployeeDetails();
         }
