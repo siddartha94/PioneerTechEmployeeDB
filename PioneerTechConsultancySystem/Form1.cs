@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using PioneerTechSystem.DAL;
 
 namespace PioneerTechConsultancySystem
 {
@@ -117,22 +118,31 @@ namespace PioneerTechConsultancySystem
                 string HomeCountry = HomeCountryTextbox.Text;
                 string Address = AddressTextbox.Text;
                 int ZipCode = Convert.ToInt32(ZipCodeTextbox.Text);
-                string connectionstring = "Data Source = LAPTOP-TBFNHHOI; Initial Catalog = PioneerEmployeeDB;Integrated Security=True";
-                SqlConnection mysqlconnection = new SqlConnection(connectionstring);
-                mysqlconnection.Open();
-                String mysql = "INSERT INTO Employee_Details(Employee_Name,Last_Name,Email,Mobile_Number,Current_Country,Home_Country,Address, ZipCode) Values ('"
-                    + FirstName + "','" + LastName + "','" + EmailId + "'," + MobileNo + ",'" + CurrentCountry + "','" + HomeCountry + "','" + Address + "'," + ZipCode + ")";
-                SqlCommand emploeeDetailsCommand=new  SqlCommand(mysql, mysqlconnection);
-
-               int result= emploeeDetailsCommand.ExecuteNonQuery();
-                if(result>0)
+                EmployeeDataAccessLayer Emp = new EmployeeDataAccessLayer();
+                string returnMessage = Emp.SaveEmployee(FirstName,LastName, EmailId, MobileNo, CurrentCountry, HomeCountry, Address, ZipCode);
+                if(returnMessage.Equals("success"))
                 {
-                    MessageBox.Show("your data is saved");
+                    MessageBox.Show("Inserted values successfully!!");
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            }
+                else
+                    MessageBox.Show("Something went Wrong!!\n" + returnMessage);
 
-                }
+                // string connectionstring = "Data Source = LAPTOP-TBFNHHOI; Initial Catalog = PioneerEmployeeDB;Integrated Security=True";
+                // SqlConnection mysqlconnection = new SqlConnection(connectionstring);
+                // mysqlconnection.Open();
+                // String mysql = "INSERT INTO Employee_Details(Employee_Name,Last_Name,Email,Mobile_Number,Current_Country,Home_Country,Address, ZipCode) Values ('"
+                //     + FirstName + "','" + LastName + "','" + EmailId + "'," + MobileNo + ",'" + CurrentCountry + "','" + HomeCountry + "','" + Address + "'," + ZipCode + ")";
+                // SqlCommand emploeeDetailsCommand=new  SqlCommand(mysql, mysqlconnection);
 
-                mysqlconnection.Close();
-                
+                //int result= emploeeDetailsCommand.ExecuteNonQuery();
+                // if(result>0)
+                // {
+                //     MessageBox.Show("your data is saved");
+
+                // }
+
+                // mysqlconnection.Close();
+
 
             }
             catch (Exception ex)
