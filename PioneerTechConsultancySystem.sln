@@ -4,6 +4,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 15.0.26430.15
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PioneerTechConsultancySystem", "PioneerTechConsultancySystem\PioneerTechConsultancySystem.csproj", "{FF09103A-B608-4A8A-A417-24922BBECE3B}"
+	ProjectSection(ProjectDependencies) = postProject
+		{BAC21764-068D-4337-B753-D5C7F4A70ED3} = {BAC21764-068D-4337-B753-D5C7F4A70ED3}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PioneerTechSystem.DAL", "PioneerTechSystem.DAL\PioneerTechSystem.DAL.csproj", "{9EAE8F3A-C670-4739-9228-3C3B0605AAD3}"
 EndProject
@@ -12,6 +15,10 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PioneerTechConsultancySystem.Model", "PioneerTechConsultancySystem.Model\PioneerTechConsultancySystem.Model.csproj", "{71198315-3656-4C43-831E-EFA642C7E296}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PioneerTech.Models", "PioneerTech.Models\PioneerTech.Models.csproj", "{C99C5846-6477-4058-916E-C41BFE59C19C}"
+EndProject
+Project("{ACA99D24-2A4B-4C16-9E92-13D6ABC4AC35}") = "SetupApp1", "SetupApp1\SetupApp1.isproj", "{2C7D80C5-B165-4118-A48D-E3FC28D9F9F7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PioneerTech.WCFServce", "PioneerTech.WCFServce\PioneerTech.WCFServce.csproj", "{BAC21764-068D-4337-B753-D5C7F4A70ED3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -127,6 +134,46 @@ Global
 		{C99C5846-6477-4058-916E-C41BFE59C19C}.SingleImage|Any CPU.Build.0 = Release|Any CPU
 		{C99C5846-6477-4058-916E-C41BFE59C19C}.WebDeployment|Any CPU.ActiveCfg = Release|Any CPU
 		{C99C5846-6477-4058-916E-C41BFE59C19C}.WebDeployment|Any CPU.Build.0 = Release|Any CPU
+		{2C7D80C5-B165-4118-A48D-E3FC28D9F9F7}.CD_ROM|Any CPU.ActiveCfg = CD_ROM
+		{2C7D80C5-B165-4118-A48D-E3FC28D9F9F7}.CD_ROM|Any CPU.Build.0 = CD_ROM
+		{2C7D80C5-B165-4118-A48D-E3FC28D9F9F7}.Custom|Any CPU.ActiveCfg = Custom
+		{2C7D80C5-B165-4118-A48D-E3FC28D9F9F7}.Custom|Any CPU.Build.0 = Custom
+		{2C7D80C5-B165-4118-A48D-E3FC28D9F9F7}.Debug|Any CPU.ActiveCfg = DVD-9
+		{2C7D80C5-B165-4118-A48D-E3FC28D9F9F7}.Debug|Any CPU.Build.0 = DVD-9
+		{2C7D80C5-B165-4118-A48D-E3FC28D9F9F7}.DVD-10|Any CPU.ActiveCfg = DVD-10
+		{2C7D80C5-B165-4118-A48D-E3FC28D9F9F7}.DVD-10|Any CPU.Build.0 = DVD-10
+		{2C7D80C5-B165-4118-A48D-E3FC28D9F9F7}.DVD-18|Any CPU.ActiveCfg = DVD-18
+		{2C7D80C5-B165-4118-A48D-E3FC28D9F9F7}.DVD-18|Any CPU.Build.0 = DVD-18
+		{2C7D80C5-B165-4118-A48D-E3FC28D9F9F7}.DVD-5|Any CPU.ActiveCfg = DVD-5
+		{2C7D80C5-B165-4118-A48D-E3FC28D9F9F7}.DVD-5|Any CPU.Build.0 = DVD-5
+		{2C7D80C5-B165-4118-A48D-E3FC28D9F9F7}.DVD-9|Any CPU.ActiveCfg = DVD-9
+		{2C7D80C5-B165-4118-A48D-E3FC28D9F9F7}.DVD-9|Any CPU.Build.0 = DVD-9
+		{2C7D80C5-B165-4118-A48D-E3FC28D9F9F7}.Release|Any CPU.ActiveCfg = WebDeployment
+		{2C7D80C5-B165-4118-A48D-E3FC28D9F9F7}.Release|Any CPU.Build.0 = WebDeployment
+		{2C7D80C5-B165-4118-A48D-E3FC28D9F9F7}.SingleImage|Any CPU.ActiveCfg = SingleImage
+		{2C7D80C5-B165-4118-A48D-E3FC28D9F9F7}.SingleImage|Any CPU.Build.0 = SingleImage
+		{2C7D80C5-B165-4118-A48D-E3FC28D9F9F7}.WebDeployment|Any CPU.ActiveCfg = WebDeployment
+		{2C7D80C5-B165-4118-A48D-E3FC28D9F9F7}.WebDeployment|Any CPU.Build.0 = WebDeployment
+		{BAC21764-068D-4337-B753-D5C7F4A70ED3}.CD_ROM|Any CPU.ActiveCfg = Release|Any CPU
+		{BAC21764-068D-4337-B753-D5C7F4A70ED3}.CD_ROM|Any CPU.Build.0 = Release|Any CPU
+		{BAC21764-068D-4337-B753-D5C7F4A70ED3}.Custom|Any CPU.ActiveCfg = Release|Any CPU
+		{BAC21764-068D-4337-B753-D5C7F4A70ED3}.Custom|Any CPU.Build.0 = Release|Any CPU
+		{BAC21764-068D-4337-B753-D5C7F4A70ED3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BAC21764-068D-4337-B753-D5C7F4A70ED3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BAC21764-068D-4337-B753-D5C7F4A70ED3}.DVD-10|Any CPU.ActiveCfg = Debug|Any CPU
+		{BAC21764-068D-4337-B753-D5C7F4A70ED3}.DVD-10|Any CPU.Build.0 = Debug|Any CPU
+		{BAC21764-068D-4337-B753-D5C7F4A70ED3}.DVD-18|Any CPU.ActiveCfg = Debug|Any CPU
+		{BAC21764-068D-4337-B753-D5C7F4A70ED3}.DVD-18|Any CPU.Build.0 = Debug|Any CPU
+		{BAC21764-068D-4337-B753-D5C7F4A70ED3}.DVD-5|Any CPU.ActiveCfg = Debug|Any CPU
+		{BAC21764-068D-4337-B753-D5C7F4A70ED3}.DVD-5|Any CPU.Build.0 = Debug|Any CPU
+		{BAC21764-068D-4337-B753-D5C7F4A70ED3}.DVD-9|Any CPU.ActiveCfg = Debug|Any CPU
+		{BAC21764-068D-4337-B753-D5C7F4A70ED3}.DVD-9|Any CPU.Build.0 = Debug|Any CPU
+		{BAC21764-068D-4337-B753-D5C7F4A70ED3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BAC21764-068D-4337-B753-D5C7F4A70ED3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BAC21764-068D-4337-B753-D5C7F4A70ED3}.SingleImage|Any CPU.ActiveCfg = Release|Any CPU
+		{BAC21764-068D-4337-B753-D5C7F4A70ED3}.SingleImage|Any CPU.Build.0 = Release|Any CPU
+		{BAC21764-068D-4337-B753-D5C7F4A70ED3}.WebDeployment|Any CPU.ActiveCfg = Release|Any CPU
+		{BAC21764-068D-4337-B753-D5C7F4A70ED3}.WebDeployment|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

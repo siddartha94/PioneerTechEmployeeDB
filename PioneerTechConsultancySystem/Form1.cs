@@ -118,12 +118,13 @@ namespace PioneerTechConsultancySystem
                 string HomeCountry = HomeCountryTextbox.Text;
                 string Address = AddressTextbox.Text;
                 int ZipCode = Convert.ToInt32(ZipCodeTextbox.Text);
-                EmployeeDataAccessLayer Emp = new EmployeeDataAccessLayer();
-                string returnMessage = Emp.SaveEmployee(FirstName,LastName, EmailId, MobileNo, CurrentCountry, HomeCountry, Address, ZipCode);
+                ServiceReference1.Service1Client service1 = new ServiceReference1.Service1Client();
+
+                string returnMessage = service1.saveEmployee(FirstName, LastName, EmailId, MobileNo, CurrentCountry, HomeCountry, Address, ZipCode);
                 if(returnMessage.Equals("success"))
                 {
                     MessageBox.Show("Inserted values successfully!!");
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            }
+                }
                 else
                     MessageBox.Show("Something went Wrong!!\n" + returnMessage);
 
